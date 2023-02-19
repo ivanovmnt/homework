@@ -1,1 +1,1 @@
-Home Work git repo :)
+Homework M3: Advanced Docker git repo - I. Ivanov
