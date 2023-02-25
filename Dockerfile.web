@@ -1,2 +1,1 @@
-FROM php:8.0-nginx
-RUN docker-php-ext-install pdo_mysql
+FROM iivanovbgp/php74-nginx

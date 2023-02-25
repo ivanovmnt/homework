@@ -8,7 +8,7 @@ services:
         volumes:
             - "${PROJECT_ROOT}/:/var/www/html:ro"
         networks:
-            - app-network
+            - homework-net
         depends_on:
             - db
     db:
@@ -16,8 +16,8 @@ services:
             context: .
             dockerfile: Dockerfile.db
         networks:
-            - app-network
+            - homework-net
         environment:
             MYSQL_ROOT_PASSWORD: "${DB_ROOT_PASSWORD}"
 networks:
-    app-network:
+    homework-net:
